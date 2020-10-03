@@ -354,9 +354,9 @@
     line-height: 40px;
     cursor: pointer;
     transition: all ease-in 0.2s;
-    background-color: #dfd9d3;
+    background-color: #d4af9e;
 
-    color: #888888;
+    color: #000000;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -604,6 +604,7 @@
 .footer-grid{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .on-top{
     position: fixed;
@@ -626,4 +627,7 @@
 }
 .on-top__button:hover{
     background-color: rgb(221, 221, 221);
+}
+@media only screen and (max-width: 768px) {
+       
 }
