@@ -26,7 +26,7 @@
                     </ul>
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <a href="" class="header__nav-link">Home</a>
+                            <a href="" class="header__nav-link">Trang chủ</a>
                         </li>
                         <li class="header__nav-item">
                             <a href="" class="header__nav-link">Thông Báo</a>
@@ -96,7 +96,7 @@
                         <h2 class="name">Phạm Năng Hưng</h2>
                         <h4 class="nick-name">(Kenz)</h4>
                     </div>
-                    <button class="edit-nick-name" onclick="OnOpenEdit()"><i class="far fa-edit"></i> Edit nick name</button>
+                    <button class="edit-nick-name" onclick="OnOpenEdit()"><i class="far fa-edit"></i> Sửa nick-name</button>
                     <div class="edit">
                         <button type="button" class="exit-edit" onclick="OnExitEdit()"><i class="fas fa-times"></i></button>
                         <div class="form-edit">
@@ -111,9 +111,9 @@
                                     <img src="./Img/QR.jpg" alt="QR code" class="infor__qr-img">
                                 </div>
                             </li>
-                            <li class="infor-nav-item"><a href="" class="infor-nav-item-link"></a>Ảnh</li>
-                            <li class="infor-nav-item"><a href="" class="infor-nav-item-link"></a>Kĩ Năng</li>
-                            <li class="infor-nav-item"><a href="" class="infor-nav-item-link"></a>Xem thêm<i class="fas fa-ellipsis-h" ></i></li>
+                            <button href="" class="infor-nav-item" onclick="ScrollTo('photo')">Ảnh</button>
+                            <button type="button" class="infor-nav-item" onclick="ScrollTo('hobbies')">Sở Thích</button>
+                            <button href="" class="infor-nav-item">Xem thêm<i class="fas fa-ellipsis-h" ></i></button>
                         </ul>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                     <div class="grid detail-grid">
                         <div class="detail-resume">
                             <ul class="detail-resume-list">
-                                <h3>Giới thiệu</h3>
+                                <h3 id="">Giới thiệu</h3>
                                 <li class="detail-resume-item">
                                     <i class="fas fa-phone-volume"></i>
                                     SĐT: +84 584 05 15 16
@@ -139,7 +139,7 @@
                                     Học tại: PTIT
                                 </li>
                             </ul>
-                            <div class="photo">
+                            <div class="photo" id='photo'>
                                 <h3>Ảnh</h3>
                                 <ul class="photo-list">
                                     <li class="photo-item"><img src="./Img/hung1.jpeg" alt="" class="photo-item-img"></li>
@@ -170,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hobbies">
+            <div class="hobbies" id="hobbies">
                 <div class="grid">
                     <ul class="hobbies-list">
                         <li class="hobbies-item">
@@ -183,15 +183,15 @@
                         </li>
                         <li class="hobbies-item">
                             <img src="https://pacificcross.com.vn/images/easyblog_articles/236/du-lich-the-gioi.jpg" alt="Travel" class="hobbies-item-img">
-                            <title class="hobbies-item-title">Travel</title>
+                            <title class="hobbies-item-title">Du Lịch</title>
                         </li>
                         <li class="hobbies-item">
                             <img src="https://png.pngtree.com/png-clipart/20190905/original/pngtree-music-player-equipment-illustration-png-image_4533663.jpg" alt="Listen to music" class="hobbies-item-img">
-                            <title class="hobbies-item-title">Listen to music</title>
+                            <title class="hobbies-item-title">Nghe nhạc</title>
                         </li>
                         <li class="hobbies-item">
                             <img src="https://thumbs.dreamstime.com/b/friends-gaming-gamers-playing-video-game-cartoon-vector-illustration-nerd-s-room-interior-multiplayer-screen-online-games-134592212.jpg" alt="Tán gái" class="hobbies-item-img">
-                            <title class="hobbies-item-title">Game</title>
+                            <title class="hobbies-item-title">Chơi Game</title>
                         </li>
                     </ul>
                 </div>

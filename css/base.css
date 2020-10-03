@@ -7,12 +7,19 @@
 *{
     box-sizing: inherit;
 }
+button{
+    border: none;
+}
+button:focus{
+    outline: none;
+}
 html{
     width: 100%;
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 ul{
     list-style-type: none;
